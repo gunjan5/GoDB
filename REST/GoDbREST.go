@@ -1,0 +1,5 @@
+package godbapi
+
+func main() {
+
+}
