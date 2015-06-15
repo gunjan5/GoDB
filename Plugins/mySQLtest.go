@@ -1,4 +1,4 @@
-package sqlGoDb
+package main
 
 func main() {
 
