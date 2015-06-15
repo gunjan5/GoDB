@@ -76,5 +76,5 @@ func PostRecord(w rest.ResponseWriter, r *rest.Request) {
 	// add record.id = &record in a db
 	lock.Unlock()
 	w.WriteJson(&record)
-	fmt.Println("OUTPUT: ", &record)
+	fmt.Println("OUTPUT: ", record)
 }
