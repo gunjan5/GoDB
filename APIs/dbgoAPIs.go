@@ -39,7 +39,7 @@ func main() {
 	api.Use(rest.DefaultDevStack...) //use the native http stack
 	router, err := rest.MakeRouter(
 		rest.Post("/records", PostRecord),
-	//	rest.Get("/records/:id", GetRecord),
+		rest.Get("/records/:id", GetRecord),
 	)
 	if err != nil {
 		log.Fatal(err)
@@ -77,4 +77,8 @@ func PostRecord(w rest.ResponseWriter, r *rest.Request) {
 	lock.Unlock()
 	w.WriteJson(&record)
 	fmt.Println("OUTPUT: ", record)
+}
+
+func GetRecord() {
+
 }
