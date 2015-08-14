@@ -1,5 +1,0 @@
-package sqlGoDb
-
-func main() {
-
-}
